@@ -8,11 +8,21 @@ public class Main {
         double vd=2.3;
         char vc='A';
         String cad="hola";
+        boolean vb= false;
 
         //Mostrando variables por pantalla
         //+ actúa como operador de concatenación
         System.out.println("vi: " + vi + " vd: " + vd);
 
+        //Conversión de tipos de datos
+        vi = (int)2.9 + (int)1.1;
+        System.out.println("vi: " + vi );
+        vi = (int)(2.9 + 1.1);
+        System.out.println("vi: " + vi );
+        //vi = (int)vb + vb; hay tipos que no son convertibles
+        vi = vc + 1;
+        System.out.println("vi (entero): " + vi + " vi (char): " + (char)vi);
+        System.exit(0);
 
         //Leyendo datos de teclado
         Scanner sc= new Scanner(System.in);
