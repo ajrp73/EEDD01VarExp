@@ -22,6 +22,31 @@ public class Main {
         //vi = (int)vb + vb; hay tipos que no son convertibles
         vi = vc + 1;
         System.out.println("vi (entero): " + vi + " vi (char): " + (char)vi);
+
+
+        //Operadores
+        int a=1, b=2;
+        System.out.println(("a: " + a + " b: " + b));
+        a++; //postincremento
+        ++b; //preincremento
+        System.out.println(("a: " + a + " b: " + b));
+        int c = a++ * ++b;
+        System.out.println(("a: " + a + "-b: " + b + "-c: " + c));
+
+        //precedencia de operadores: () ++ -- */% +- << = ==!= > >=    || && !
+        boolean bo= (2+8) < ++a || 2+5*9 == a++ + 43;
+                   //10 < ++a || 2+5*9 == a++ + 43;
+                   //10 < 4 || 2+5*9 == 4 + 43;  (a vale 5)
+                   //10 < 4 || 2+45  == 4 + 43
+                   //10 < 4 ||  47   ==  47
+                   // false || true
+                   // true
+        System.out.println("bo: " + bo + " a: " + a);
+        bo = ++a < 10 || ++a == 6 && true; //Con un solo | se evalúan los dos lados
+        System.out.println("bo: " + bo + " a: " + a);
+
+
+
         System.exit(0);
 
         //Leyendo datos de teclado
