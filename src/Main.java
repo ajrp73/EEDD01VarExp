@@ -45,6 +45,23 @@ public class Main {
         bo = ++a < 10 || ++a == 6 && true; //Con un solo | se evalúan los dos lados
         System.out.println("bo: " + bo + " a: " + a);
 
+        cad="Hola";
+        //sobrecarga de operadores: El operador se comporta de forma diferente
+        //según sus operandos
+        a= 1 + 1; //+ es suma algebraica
+        cad = "1" + "1" + 2 + 3 + 4 + 2.3 + true; //+ es concatenación   incluir otro tipo se denomina wrapping
+        System.out.println("cad: " + cad);
+        String cad1= cad.substring(2,4);
+        System.out.println("cad1: " + cad1);
+
+        bo= "hola".equals("Hola");
+        System.out.println("bo: " + bo );
+
+        bo= cad1.equals("23");
+        System.out.println("bo: " + bo );
+
+
+
 
 
         System.exit(0);
