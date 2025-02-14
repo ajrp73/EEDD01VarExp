@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -61,8 +62,17 @@ public class Main {
         System.out.println("bo: " + bo );
 
 
+        int []arrInt1 = new int[5];
+        int []arrInt2 = {0, 1, 2, 3, 4};
 
+        System.out.println("arrInt1: " + Arrays.toString(arrInt1));
+        System.out.println("arrInt2: " + Arrays.toString(arrInt2));
 
+        int [][]matriz1= new int[5][5];
+        int [][]matriz2= { {0, 1, 2, 3, 4},
+                           {0, 1, 2, 3, 4} };
+        System.out.println("matriz1: \n" + Arrays.toString(matriz1[0]) + "\n" + Arrays.toString(matriz1[1]));
+        System.out.println("matriz2: \n" + Arrays.toString(matriz2[0]) + "\n" + Arrays.toString(matriz2[1]));
 
         System.exit(0);
 
