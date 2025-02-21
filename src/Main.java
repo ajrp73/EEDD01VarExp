@@ -74,6 +74,33 @@ public class Main {
         System.out.println("matriz1: \n" + Arrays.toString(matriz1[0]) + "\n" + Arrays.toString(matriz1[1]));
         System.out.println("matriz2: \n" + Arrays.toString(matriz2[0]) + "\n" + Arrays.toString(matriz2[1]));
 
+        enum Calificaciones  {SUS, APR, NOT, SB};
+        Calificaciones nota0, nota1;
+        double nota2, nota3;
+        nota2= 5.0;
+        nota0= Calificaciones.APR;
+        nota1= Calificaciones.SB;
+
+        Calificaciones []notas1 = new Calificaciones[10];
+        for (int i=0; i<notas1.length; i++){
+            notas1[i]= Calificaciones.APR;
+        }
+
+        //definir un array de 10 notas llamado notas2 y asignar a todas el valor SB
+        Calificaciones []notas2 = new Calificaciones[10];
+        for(Calificaciones cal: notas2){
+            cal= Calificaciones.SB;
+        }
+        //Bucle for abreviado que sume los elementos de un array de enteros de nombre ai y de longitud 5 posiciones,
+        //inicializado previamente dando a cada posición el valor 10
+        //Mostrar el array con Arrays.toString()
+        int []ai= {10, 10, 10, 10, 10};
+        int suma=0;
+        for(int num: ai){
+            suma+=num;
+        }
+        System.out.println("ai: " + Arrays.toString(ai) + " suma: " + suma);
+
         System.exit(0);
 
         //Leyendo datos de teclado
